@@ -1,0 +1,241 @@
+<resources>
+    <string name="app_name">Alphageek Sales</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="prefix_five">
+        <item>07029</item>
+        <item>07028</item>
+        <item>07027</item>
+        <item>07026</item>
+        <item>07025</item>
+    </string-array>
+
+
+    <string-array name="prefix_four">
+        <item>0909</item>
+        <item>0908</item>
+        <item>0907</item>
+        <item>0906</item>
+        <item>0905</item>
+        <item>0903</item>
+        <item>0902</item>
+        <item>0819</item>
+        <item>0818</item>
+        <item>0817</item>
+        <item>0816</item>
+        <item>0815</item>
+        <item>0814</item>
+        <item>0813</item>
+        <item>0812</item>
+        <item>0811</item>
+        <item>0810</item>
+        <item>0809</item>
+        <item>0808</item>
+        <item>0807</item>
+        <item>0806</item>
+        <item>0805</item>
+        <item>0804</item>
+        <item>0803</item>
+        <item>0802</item>
+        <item>0709</item>
+        <item>0708</item>
+        <item>0707</item>
+        <item>0706</item>
+        <item>0705</item>
+        <item>0704</item>
+        <item>0703</item>
+        <item>0702</item>
+        <item>0701</item>
+    </string-array>
+
+
+    <string-array name="items">
+        <item>test1</item>
+        <item>test2</item>
+        <item>test3</item>
+        <item>test4</item>
+    </string-array>
+
+    <string-array name="status">
+        <item>Status</item>
+        <item>Available</item>
+        <item>Not Available</item>
+    </string-array>
+
+    <string-array name="stores">
+        <item>Select store</item>
+        <item>Store one</item>
+        <item>Store two</item>
+        <item>Store three</item>
+    </string-array>
+
+    <string-array name="location">
+        <item>Select Location</item>
+        <item>Location one</item>
+        <item>Location two</item>
+        <item>Location three</item>
+    </string-array>
+
+    <string-array name="detailing_status">
+        <item>Select Detailing Status</item>
+        <item>InProgress</item>
+        <item>Completed</item>
+    </string-array>
+
+    <string-array name="brand_name">
+        <item>Select Brand Name</item>
+        <item>Cocacola</item>
+        <item>Pepsi</item>
+        <item>test3</item>
+        <item>test4</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="country">
+        <item>Select Country</item>
+        <item>Bangladesh</item>
+        <item>Nigeria</item>
+    </string-array>
+
+    <string-array name="state">
+        <item>Select State</item>
+        <item>Dhaka</item>
+        <item>Khulna</item>
+    </string-array>
+
+    <string-array name="lga">
+        <item>Select LGA</item>
+        <item>Dhaka</item>
+        <item>Khulna</item>
+    </string-array>
+
+    <string-array name="education">
+        <item>Education</item>
+        <item>SSC</item>
+        <item>HSC</item>
+        <item>BSC</item>
+    </string-array>
+
+    <string-array name="bank">
+        <item>Select Bank</item>
+        <item>DBBL</item>
+        <item>City Bank</item>
+        <item>BSC</item>
+    </string-array>
+
+    <string-array name="invoice_types">
+        <item>Show All Type of Invoice</item>
+        <item>Ready Stock Sale</item>
+        <item>Order Generation</item>
+        <item>Order Product Delivery</item>
+    </string-array>
+
+    <string name="facing_quantity">Facing/Quantity</string>
+    <string name="change_view">Change View</string>
+
+    <string name="satellite">Satellite</string>
+    <string name="hybrid">Hybrid</string>
+    <string name="normal">Normal</string>
+    <string name="none">None</string>
+    <string name="terrain">Terrain</string>
+
+    <string name="logout">Logout</string>
+    <string name="are_you_sure_to_logout">Are you sure to logout?</string>
+    <string name="checkoutt">Are you sure to check out for approve request?</string>
+    <string name="inventory_request">Are you sure to inventory request?</string>
+    Encode it:&amp;
+
+    <string name="preview_invoice">Other Printers</string>
+    <string name="inventory_management">Inventory Management</string>
+
+    <string name="bluetooth_printer">Bluetooth Printer</string>
+    <string name="select_your_printer">Select your printer</string>
+    <string name="outlet_list">Outlet List</string>
+    <string name="outlet_name">Outlet Name</string>
+
+    <string name="invoice">Sales\nInvoice</string>
+    <string name="inventory_list_fragment">Inventory List</string>
+    <string name="briefs">Briefs</string>
+    <string name="visit_schedule">Visit Schedule</string>
+    <string name="sales_ready_stock">Sales (Ready Stock)</string>
+    <string name="unit_qty">Unit Qty</string>
+    <string name="unit">Unit</string>
+    <string name="case_">Case</string>
+    <string name="unit_price">Price per unit</string>
+    <string name="cost_price">Cost Price</string>
+    <string name="order_generation"></string>
+    <string name="image_note_fragment">Images &amp; Notes</string>
+    <string name="total_sale">Total Sale</string>
+    <string name="amount_paid">Amount Paid</string>
+    <string name="amount">Price</string>
+    <string name="payment_type">Payment Type</string>
+    <string name="order_form">Order Form</string>
+    <string name="complete_visit">Complete Visit</string>
+    <string name="print_view">Invoice View</string>
+
+    <string name="print_invoice">Invoice List</string>
+    <string name="sales_and_order">Sales &amp; Order Generator</string>
+    <string name="dashboard">Sales &amp; Order Dashboard</string>
+
+    <string name="cash_in_hand">Cash in Hand</string>
+    <string name="cash_in_bank">Cash in Bank</string>
+    <string name="outlet_recruitment">Outlet Recruitment</string>
+    <string name="win_at_work_today">Win at work today !</string>
+    <string name="check_out">Check Out</string>
+    <string name="pending_request">Pending Requests</string>
+    <string name="invoive_print">Invoice List</string>
+    <string name="generatre_pdf">Generate Pdf</string>
+    <string name="credit">Credit</string>
+    <string name="daily_salse_amount">Daily Sales Amount</string>
+    <string name="piece">Piece</string>
+    <string name="change_amount">Change Amount</string>
+    <string name="paid_amount_can_not_be_gratter_then_sale">Paid amount can not be gretter then sale amount</string>
+    <string name="sync">Sync</string>
+    <string name="due_amount">Due Amount</string>
+
+    <string name="contact_no">Contact No</string>
+    <string name="organization_phn_no">organization phn no</string>
+    <string name="invoice_no">Invoice No</string>
+    <string name="customer">Customer Name</string>
+    <string name="customer_contact">Customer Contact No</string>
+    <string name="receipt_invoice">Receipt Invoice</string>
+    <string name="receipt_no">Receipt No</string>
+    <string name="Items">Items</string>
+    <string name="total_caps">Total Caps</string>
+    <string name="price">Price</string>
+    <string name="terms_conditions">Terms &amp; Conditions</string>
+    <string name="sales_Tex">Sales Tex</string>
+    <string name="sale_price">Sale Price</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="daily_sales_ready_stock">Daily Sales Ready Stock</string>
+    <string name="daily_order_generator">Daily Order Generator</string>
+    <string name="product_name">Product Name</string>
+    <string name="confirm_requests">Accept Inventory Products</string>
+    <string name="approve">Accept</string>
+    <string name="view">View</string>
+    <string name="order_id">Order ID</string>
+    <string name="order_date">Order Date</string>
+    <string name="grand_total">Grand Total</string>
+    <string name="outlet_phone">Outlet Phone</string>
+    <string name="already_visited_sold_product">Already visited and sold product</string>
+    <string name="already_visited">Already Visited</string>
+    <string name="order_oroduct_delevared">Order product delivered</string>
+    <string name="toast_1">Transaction print,use the AIDL mode!</string>
+    <string name="toast_2">The service has been disconnected!</string>
+    <string name="toast_3">Bluetooth device is unavailable</string>
+    <string name="toast_4">Bluetooth device not detected. Please open Bluetooth!</string>
+    <string name="toast_5">Not Found InnterPrinter!</string>
+    <string name="toast_6">Bluetooth connect failed!</string>
+    <string name="user_name">User Name</string>
+    <string name="order_product_delevary">Order Product Delivery</string>
+    <string name="order_visit_schedule">Order Visit Schedule</string>
+    <string name="outlet_visited">Outlet Visited</string>
+    <string name="where_do_you_want_to_visit">Where do you want to visit?</string>
+    <string name="are_you_ordering">Are you ordering or buying from us?</string>
+    <string name="pay_amount">Pay Amount</string>
+    <string name="no_message_in_your_inbox">No message in your inbox</string>
+
+</resources>

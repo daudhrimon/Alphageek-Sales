@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/_6sdp"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:orientation="vertical"
+        android:padding="@dimen/_8sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/outletName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:text="Hazel Food Corner"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:text="New State doula,cameroon"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:text="Date : 12-05-2022"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:text="Time 12:15 AM"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:background="@drawable/map_preview"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_map" />
+
+                <TextView
+                    android:id="@+id/locationName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="ABA NORTH"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/visitScheduleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_style"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:padding="@dimen/_8sdp"
+            android:visibility="visible"
+            tools:ignore="TouchTargetSizeCheck">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:text="Visit Schedule"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/detailsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/btn_style"
+            android:backgroundTint="@color/green"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:visibility="gone">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/outlet_visited"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/orderDelevaryScheduleLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/btn_style"
+            android:backgroundTint="@color/order_delevary"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:visibility="gone">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order_visit_schedule"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="@dimen/_8sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/topBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            android:background="@color/colorPrimary"
+            android:paddingHorizontal="@dimen/_8sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Invoice"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/closeBtn"
+                android:layout_width="@dimen/_31sdp"
+                android:layout_height="@dimen/_31sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:backgroundTint="@color/white"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                app:cornerRadius="@dimen/_8sdp"
+                app:icon="@drawable/ic_baseline_close_24"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconSize="@dimen/_21sdp"
+                app:iconTint="@color/black"
+                app:rippleColor="@color/colorPrimary"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/shareBtn"
+                android:layout_width="@dimen/_31sdp"
+                android:layout_height="@dimen/_31sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_toStartOf="@id/closeBtn"
+                android:backgroundTint="@color/white"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                app:cornerRadius="@dimen/_8sdp"
+                app:icon="@drawable/ic_baseline_share_24"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconSize="@dimen/_18sdp"
+                app:iconTint="@color/black"
+                app:rippleColor="@color/colorPrimary"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/printBtn"
+                android:layout_width="@dimen/_31sdp"
+                android:layout_height="@dimen/_31sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_toStartOf="@id/shareBtn"
+                android:backgroundTint="@color/white"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                app:cornerRadius="@dimen/_8sdp"
+                app:icon="@drawable/ic_baseline_print_24"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconSize="@dimen/_20sdp"
+                app:iconTint="@color/black"
+                app:rippleColor="@color/colorPrimary"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        </RelativeLayout>
+
+        <WebView
+            android:id="@+id/invoiceWebView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_13sdp"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

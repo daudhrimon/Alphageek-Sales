@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/dashboardFragment">
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.gdm.alphageeksales.view.ui.module.common.dashboard.DashboardFragment"
+        android:label="@string/dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+    <fragment
+        android:id="@+id/inboxDetailsFragment"
+        android:name="com.gdm.alphageeksales.view.ui.module.common.inbox.InboxDetailsFragment"
+        android:label="Inbox Details"
+        tools:layout="@layout/fragment_inbox_details" />
+    <fragment
+        android:id="@+id/inboxFragment"
+        android:name="com.gdm.alphageeksales.view.ui.module.common.inbox.InboxFragment"
+        android:label="Inbox"
+        tools:layout="@layout/fragment_inbox" />
+    <fragment
+        android:id="@+id/scheduleFragment"
+        android:name="com.gdm.alphageeksales.view.ui.module.common.schedule.ScheduleFragment"
+        android:label="Visit Schedule"
+        tools:layout="@layout/fragment_schedule" />
+    <fragment
+        android:id="@+id/routePlanFragment"
+        android:name="com.gdm.alphageeksales.view.ui.module.sales_and_order.RoutePlanFragment"
+        android:label="Route Plan"
+        tools:layout="@layout/fragment_route_plan" />
+    <fragment
+        android:id="@+id/createScheduleFragment"
+        android:name="com.gdm.alphageeksales.view.ui.module.common.schedule.CreateScheduleFragment"
+        android:label="Create Schedule"
+        tools:layout="@layout/fragment_create_schedule" />
+    <fragment
+        android:id="@+id/storeVisitImageFragment"
+        android:name="com.gdm.alphageeksales.view.ui.module.sales_and_order.StoreVisitImageFragment"
+        android:label="Store Visit"
+        tools:layout="@layout/fragment_store_visit_image" />
+    <fragment
+        android:id="@+id/orderGenerationFragment"
+        android:name="com.gdm.alphageeksales.view.ui.module.sales_and_order.OrderGenerationFragment"
+        android:label="@string/sales_and_order"
+        tools:layout="@layout/fragment_order_generation" />
+    <fragment
+        android:id="@+id/createOutletFragment"
+        android:name="com.gdm.alphageeksales.view.ui.module.common.outlet.CreateOutletFragment"
+        android:label="Create Outlet"
+        tools:layout="@layout/fragment_create_outlet" />
+    <fragment
+        android:id="@+id/outletListFragment"
+        android:name="com.gdm.alphageeksales.view.ui.module.common.outlet.OutletListFragment"
+        android:label="Outlet List"
+        tools:layout="@layout/fragment_outlet_list" />
+    <fragment
+        android:id="@+id/orderGenerationImageFragment"
+        android:name="com.gdm.alphageeksales.view.ui.module.sales_and_order.OrderGenerationImageFragment"
+        android:label="@string/image_note_fragment"
+        tools:layout="@layout/fragment_order_generation_image" />
+    <fragment
+        android:id="@+id/inventoryMangeFragment"
+        android:name="com.gdm.alphageeksales.view.ui.module.inventory.InventoryManageFragment"
+        android:label="Inventory Management"
+        tools:layout="@layout/fragment_inventory_manage" />
+    <fragment
+        android:id="@+id/invoiceListFragment"
+        android:name="com.gdm.alphageeksales.view.ui.module.invoice.InvoiceListFragment"
+        android:label="Sales Invoice"
+        tools:layout="@layout/fragment_invoice_list" />
+    <fragment
+        android:id="@+id/pendingRequestFragment"
+        android:name="com.gdm.alphageeksales.view.ui.module.inventory.PendingRequestFragment"
+        android:label="Pending Request"
+        tools:layout="@layout/fragment_pending_request" />
+    <fragment
+        android:id="@+id/orderProductDeliveryFragment"
+        android:name="com.gdm.alphageeksales.view.ui.module.sales_and_order.OrderProductDeliveryFragment"
+        android:label="@string/order_product_delevary"
+        tools:layout="@layout/fragment_order_product_delivery_" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.gdm.alphageeksales.view.ui.module.sales_and_order.MapsFragment"
+        tools:layout="@layout/fragment_maps" />
+    <fragment
+        android:id="@+id/helpAndSupportFragment"
+        android:name="com.gdm.alphageeksales.view.ui.module.common.help.HelpAndSupportFragment"
+        android:label="Help &amp; Support"
+        tools:layout="@layout/fragment_help_and_support" />
+</navigation>

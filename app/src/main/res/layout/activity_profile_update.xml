@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".view.ui.update_profile.ProfileUpdateActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@color/white" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <com.aceinteract.android.stepper.StepperNavigationView
+            android:id="@+id/stepper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+            app:stepperIconSize="@dimen/_30sdp"
+            app:stepperItems="@menu/profile_menu"
+            app:stepperTextColor="@color/colorPrimary"
+            app:stepperTextSize="@dimen/_8sdp"
+            app:stepperType="tab_numbered"
+            app:stepperWidgetColor="@color/colorPrimary" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <fragment
+        android:id="@+id/frame_stepper"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:navGraph="@navigation/profile_navigation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

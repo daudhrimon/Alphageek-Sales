@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context=".view.ui.module.sales_and_order.OrderProductDeliveryFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/card"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        app:layout_constraintBottom_toTopOf="@+id/continueBtn" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/continueBtn"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp">
+
+            <RelativeLayout
+                android:id="@+id/totalSaleLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_sale"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/totalSale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="0.0"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/due_amount"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/dueAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="0.0"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/change_amount"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/changeAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="0.0"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/addPaymentType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/search_box_background"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="13dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_28sdp"
+                    android:background="@drawable/edit_text_round"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:text="@string/payment_type"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <Spinner
+                        android:id="@+id/paymentTypeSpn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/amount_paid"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <EditText
+                    android:id="@+id/paidAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_round"
+                    android:gravity="center"
+                    android:hint="@string/amount_paid"
+                    android:inputType="number"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="6dp"
+                    android:paddingBottom="3dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/continueBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_38sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:backgroundTint="@color/colorPrimary"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        app:cornerRadius="@dimen/_8sdp"
+        android:textSize="@dimen/_11sdp"
+        android:text="Save &amp; Continue"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/createOutlet"
+        android:visibility="visible"
+        tools:listitem="@layout/outlet_items" />
+
+    <RelativeLayout
+        android:id="@+id/emptyViewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recyclerview"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/empty_view_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="60dp"
+            android:text="No Outlet Found"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="italic"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/createOutlet"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_38sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/_7sdp"
+        android:layout_marginVertical="@dimen/_7sdp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/colorPrimary"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:textSize="@dimen/_11sdp"
+        app:cornerRadius="@dimen/_8sdp"
+        android:text="Create Outlet"
+        android:textColor="@color/white"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</RelativeLayout>

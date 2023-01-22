@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_color"
+    tools:context=".view.ui.update_profile.PersonalInfoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/country"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/edit_text_box"
+            android:fontFamily="@font/roboto_light"
+            android:padding="@dimen/_8sdp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Spinner
+            android:id="@+id/state"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/edit_text_box"
+            android:fontFamily="@font/roboto_light"
+            android:padding="@dimen/_8sdp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Spinner
+            android:id="@+id/lga"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/edit_text_box"
+            android:fontFamily="@font/roboto_light"
+            android:padding="@dimen/_8sdp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+        <EditText
+            android:id="@+id/ninNumber"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/edit_text_box"
+            android:digits="0123456789"
+            android:fontFamily="@font/roboto_light"
+            android:hint="NIN"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:padding="@dimen/_8sdp" />
+
+        <EditText
+            android:id="@+id/bvnNumber"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/edit_text_box"
+            android:digits="0123456789"
+            android:fontFamily="@font/roboto_light"
+            android:hint="BVN"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:padding="@dimen/_8sdp" />
+
+        <EditText
+            android:id="@+id/lassra"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/edit_text_box"
+            android:digits="0123456789"
+            android:fontFamily="@font/roboto_light"
+            android:hint="LASSRA"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:padding="@dimen/_8sdp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/nextBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_44sdp"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Next"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="@dimen/_9sdp"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/bg_color"
+    app:cardCornerRadius="@dimen/_8sdp"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_34sdp"
+            android:layout_margin="@dimen/_7sdp">
+
+            <EditText
+                android:id="@+id/searchBar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_34sdp"
+                android:background="@drawable/inventory_search_bg"
+                android:drawableStart="@drawable/ic_baseline_search_24"
+                android:drawablePadding="@dimen/_5sdp"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_6sdp"
+                android:paddingEnd="@dimen/_39sdp"
+                android:singleLine="true"
+                android:textSize="@dimen/_13sdp"
+                app:tint="@color/black"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/closeBtn"
+                android:layout_width="@dimen/_34sdp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                app:cornerRadius="@dimen/_8sdp"
+                app:icon="@drawable/ic_baseline_close_24"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconSize="@dimen/_21sdp"
+                app:iconTint="@color/white"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="@dimen/_7sdp"
+            android:layout_weight="8"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@+id/getInventory"
+            tools:listitem="@layout/get_inventory_items" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_34sdp"
+            android:layout_margin="@dimen/_7sdp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerview">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCancle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:layout_weight=".8"
+                android:backgroundTint="@color/colorPrimary"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                app:cornerRadius="@dimen/_8sdp"
+                android:textSize="@dimen/_11sdp"
+                android:text="Close"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerview"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/saveBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_weight=".8"
+                android:backgroundTint="@color/colorPrimary"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                app:cornerRadius="@dimen/_8sdp"
+                android:textSize="@dimen/_11sdp"
+                android:text="Request"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerview"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

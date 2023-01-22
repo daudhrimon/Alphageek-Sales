@@ -1,0 +1,74 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/outletTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            app:tabGravity="fill"
+            app:tabIndicator="@color/white"
+            app:tabIndicatorColor="@color/white"
+            app:tabIndicatorHeight="5dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="#eeeeee"
+            tools:ignore="SpeakableTextPresentCheck">
+
+        </com.google.android.material.tabs.TabLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/outletViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/_6sdp"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:layout_constraintBottom_toTopOf="@+id/createSchedule"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/createSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_38sdp"
+        android:layout_marginHorizontal="@dimen/_7sdp"
+        android:layout_marginBottom="@dimen/_7sdp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Create Schedule"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        app:cornerRadius="@dimen/_8sdp"
+        android:textSize="@dimen/_11sdp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Connect to internet to get outlets"
+        android:textColor="@color/text_color"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

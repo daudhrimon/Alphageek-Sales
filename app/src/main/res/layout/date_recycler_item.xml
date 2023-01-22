@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dateCard"
+    android:layout_width="@dimen/_63sdp"
+    android:layout_height="@dimen/_63sdp"
+    android:layout_margin="@dimen/_3sdp"
+    android:backgroundTint="@color/white"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="@dimen/_8sdp"
+    app:cardElevation="0dp"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dayName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="16"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp" />
+
+        <TextView
+            android:id="@+id/dayDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Fri"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_navigation"
+    app:startDestination="@id/personalInfo">
+    <fragment
+        android:id="@+id/personalInfo"
+        android:name="com.gdm.alphageeksales.view.ui.update_profile.PersonalInfoFragment"
+        android:label="Personal Information"
+        tools:layout="@layout/fragment_personal_info" />
+    <fragment
+        android:id="@+id/bankAccountInfo"
+        android:name="com.gdm.alphageeksales.view.ui.update_profile.BankAccountInfoFragment"
+        android:label="Bank Account"
+        tools:layout="@layout/fragment_bank_account_info" />
+    <fragment
+        android:id="@+id/guarantorsInfo"
+        android:name="com.gdm.alphageeksales.view.ui.update_profile.GuarantorsInfoFragment"
+        android:label="Guarantor Information"
+        tools:layout="@layout/fragment_guarantors_info" />
+    <fragment
+        android:id="@+id/uniqueIdentification"
+        android:name="com.gdm.alphageeksales.view.ui.update_profile.UniqueIdentificationFragment"
+        android:label="Unique Identification"
+        tools:layout="@layout/fragment_unique_identification" />
+    <fragment
+        android:id="@+id/pictureCapture"
+        android:name="com.gdm.alphageeksales.view.ui.update_profile.PictureCaptureFragment"
+        android:label="Capture Image"
+        tools:layout="@layout/fragment_picture_capture" />
+</navigation>

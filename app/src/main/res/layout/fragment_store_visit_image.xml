@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context=".view.ui.module.sales_and_order.StoreVisitImageFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/edit_text_box"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Outlet Image"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_14sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/edit_text_box"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/confirmBtn"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:src="@drawable/ic_camera_shape"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/edit_text_box"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Note"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_14sdp" />
+
+        <EditText
+            android:id="@+id/notes"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/edit_text_box"
+            android:backgroundTint="@color/gray"
+            android:gravity="top"
+            android:hint="Write Something........."
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/_8sdp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_44sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/completeBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:layout_weight="1.5"
+            android:backgroundTint="@color/colorPrimary"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:maxLines="1"
+            android:text="Complete Visit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp"
+            app:cornerRadius="@dimen/_9sdp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/shareBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorPrimary"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:maxLines="1"
+            android:text="Share"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp"
+            app:cornerRadius="@dimen/_9sdp"
+            app:icon="@drawable/ic_baseline_share_24"
+            app:iconGravity="textStart"
+            app:iconTint="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

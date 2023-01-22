@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#502EF1</color>-->
+    <color name="colorPrimary">#EC446C</color>
+    <!--<color name="colorPrimaryDark">#5E3DFD</color>-->
+    <color name="colorPrimaryDark">#EC446C</color>
+    <!--<color name="colorAccent">#5E3DFD</color>-->
+    <color name="colorAccent">#EC446C</color>
+    <color name="black">#FF000000</color>
+<!--    <color name="black">#2B2B2B</color>-->
+    <color name="white">#FFFFFFFF</color>
+    <color name="edit_text_background">#F0F3F4</color>
+    <color name="invoice_color">#EC446C</color>
+    <color name="red">#C72424</color>
+    <color name="green_deeo">#327122</color>
+    <color name="green">#25AD03</color>
+    <color name="order_delevary">#00BCD4</color>
+    <color name="order_visit">#FF9800</color>
+    <color name="bg_color">#EAE3E4</color>
+    <color name="icons_bg">#B0F8F0F2</color>
+    <color name="bg_color_light">#F7F8F8</color>
+    <color name="text_color">#555555</color>
+    <color name="gray">#EFEFEF</color>
+</resources>

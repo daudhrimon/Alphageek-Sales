@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "279685120260",
+    "project_id": "alphageek-sales",
+    "storage_bucket": "alphageek-sales.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279685120260:android:932b8764d2112d625bd051",
+        "android_client_info": {
+          "package_name": "com.gdm.alphageeksales"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "279685120260-5ie4tnj7oafqivd802lsha7k2iqfqvha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7PRu4jmcvicYE9yokrh95M64bBm95Dlc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "279685120260-5ie4tnj7oafqivd802lsha7k2iqfqvha.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context=".view.ui.module.common.schedule.CreateScheduleFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/addSalesOrderGenerator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:background="@drawable/search_box_background"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="13dp">
+
+            <Spinner
+                android:id="@+id/sales_orderSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/_10sdp" />
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/getInventory"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_weight="8"
+            app:layout_constraintBottom_toTopOf="@+id/continueBtn"
+            app:layout_constraintTop_toBottomOf="@+id/getInventory" />
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

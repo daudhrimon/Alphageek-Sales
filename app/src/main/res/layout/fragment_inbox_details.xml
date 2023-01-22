@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_6sdp"
+        app:cardElevation="@dimen/_1sdp"
+        android:layout_margin="@dimen/_3sdp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_2sdp"
+                android:text="Contact -temporary download of banking Operation for llc bank"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date : 19-04-2022"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:padding="@dimen/_2sdp"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_10sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@color/text_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Attached File :"
+                    android:textColor="@color/text_color"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/downloadBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_alignParentEnd="true"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:text="Download"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    app:cornerRadius="@dimen/_8sdp"
+                    android:textColor="@color/white"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+

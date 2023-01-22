@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:animationCache="true"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context=".view.ui.module.invoice.InvoiceListFragment">
+
+    <RelativeLayout
+        android:id="@+id/searchLay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_34sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginHorizontal="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:animateLayoutChanges="true"
+        android:animationCache="true">
+
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_34sdp"
+            android:background="@drawable/inventory_search_bg"
+            android:drawableStart="@drawable/ic_baseline_search_24"
+            android:drawablePadding="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_6sdp"
+            android:paddingEnd="@dimen/_39sdp"
+            android:singleLine="true"
+            android:textSize="@dimen/_13sdp"
+            app:tint="@color/black"
+            android:visibility="gone"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/searchBtn"
+            android:layout_width="@dimen/_34sdp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="@dimen/_8sdp"
+            app:icon="@drawable/ic_baseline_search_24"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconSize="@dimen/_21sdp"
+            app:iconTint="@color/white"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <LinearLayout
+            android:id="@+id/spinnerLay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/searchBtn"
+            android:background="@drawable/inventory_search_bg">
+
+            <Spinner
+                android:id="@+id/typeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:entries="@array/invoice_types"
+                android:paddingHorizontal="@dimen/_5sdp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@+id/searchLay" />
+
+    <RelativeLayout
+        android:id="@+id/emptyLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchLay">
+
+        <TextView
+            android:id="@+id/empty_view_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="60dp"
+            android:text="No Invoice Found !"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="italic"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

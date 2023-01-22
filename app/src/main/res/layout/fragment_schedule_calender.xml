@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp">
+
+
+        <TextView
+            android:id="@+id/schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:padding="@dimen/_3sdp"
+            android:text="Your Schedule"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/total_visit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/schedule"
+            android:paddingStart="@dimen/_5sdp"
+            android:text="You Have 4 Store Visit Today"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_10sdp"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/calenderBtn"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_calender" />
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dateRecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_69sdp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:spanCount="4"
+        tools:listitem="@layout/date_recycler_item" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:listitem="@layout/schedule_items" />
+
+    <RelativeLayout
+        android:id="@+id/emptyViewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/empty_view_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="60dp"
+            android:text="You Have No Store Visit Today"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="italic"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</LinearLayout>

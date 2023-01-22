@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_6sdp"
+    android:layout_marginVertical="@dimen/_3sdp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/_6sdp"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="horizontal"
+            android:padding="@dimen/_6sdp"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_1sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Checkout ID:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/checkoutId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_light"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_1sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Checkout Date:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/checkoutDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_light"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/checkApprove"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/approve"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/expandRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/expandBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_28sdp"
+            android:backgroundTint="@color/white"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            app:icon="@drawable/ic_baseline_expand_more_24"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconTint="@color/black"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
